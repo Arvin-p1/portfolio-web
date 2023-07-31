@@ -1,1 +1,1 @@
-Content1
+This will be my first ever website dedicated to me at this stage of my studies/ career! 
