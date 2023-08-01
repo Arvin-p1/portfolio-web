@@ -25,18 +25,21 @@ header .greetings{
     font-size: 2.5rem;
 } /* welcome text and img together*/
 header .intro {
-margin: 10px 30px 26vh;
-padding: 30px 80px;
-font-size: 2rem;
-word-spacing: 3px;
-border-left: inset;
-border-color: #4173df;
+    margin: 10px 30px 26vh;
+    padding: 30px 80px;
+    font-size: 2rem;
+    word-spacing: 3px;
+    border-left: inset;
+    border-color: #4173df;
 } /*intro paragraph*/
 nav {
     justify-content: space-around;
     align-items: center;
     height: 7vh;
     width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* overlays element over others */
 } /* set the parameters for the nav sections height and its content */
 nav, .navigation-links {
     display: flex;
@@ -49,7 +52,6 @@ nav, .navigation-links {
     font-weight: bold;
     text-decoration: none;
     padding: 1vh 5px;
-    position: sticky;
 } /* i have set the way the text is displayed and padding matching to the hover move below so nothing shifts */
 .navigation-links a:hover{
     border-bottom: 5px solid #4173df;
@@ -58,6 +60,32 @@ nav, .navigation-links {
 	padding: 5px 5px;
 	text-decoration: none;
 } /* how the text is displayed once the mouse is hovered over it */
+.contact-links ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border-left: inset;
+    border-color: #4173df;
+    gap: 8vw;
+    padding: 20px;
+    margin: 1.5vw;
+}  
+#contact .outro-pic img {
+    display: inline-flex;
+    float: right;
+    min-width: 22vw;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+#contact .contact-links a {
+    color:black;
+}
+
+.contact-links img {
+    max-width: 40px;
+    min-width: 40px; 
+} /*icon width*/
 
 html {
     scroll-behavior: smooth;
