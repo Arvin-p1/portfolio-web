@@ -2,7 +2,8 @@
     margin: 1px;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(227, 241, 241);
+    background-color: rgb(236, 248, 248);
+    box-sizing: border-box;
 } /* setting the defaults for page*/
 header .greetings{
     float: left;
@@ -30,6 +31,7 @@ header .intro {
     font-size: 2rem;
     word-spacing: 3px;
     border-left: inset;
+    border-width: 10px;
     border-color: #4173df;
 } /*intro paragraph*/
 nav {
@@ -60,6 +62,13 @@ nav, .navigation-links {
 	padding: 5px 5px;
 	text-decoration: none;
 } /* how the text is displayed once the mouse is hovered over it */
+.contact-links p {
+    float: left;
+    padding: 1.5rem;
+    padding-left: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 .contact-links ul {
     display: inline-flex;
     align-items: center;
@@ -67,8 +76,9 @@ nav, .navigation-links {
     list-style: none;
     border-left: inset;
     border-color: #4173df;
+    border-width: 10px;
     gap: 8vw;
-    padding: 20px;
+    padding: 1rem;
     margin: 1.5vw;
 }  
 #contact .outro-pic img {
