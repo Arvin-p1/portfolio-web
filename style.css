@@ -207,6 +207,21 @@ nav, .navigation-links {
     max-width: 40px;
     min-width: 40px; 
 } /*icon width*/
+footer {
+    position: relative; /* Change 'fixed' to 'relative' */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 35vh;
+  }
+  
+  footer p {
+    text-align: center;
+    color: rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
 
 html {
     scroll-behavior: smooth;
