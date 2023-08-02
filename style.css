@@ -57,7 +57,7 @@ nav, .navigation-links {
     color: #363636;
     font-weight: bold;
     text-decoration: none;
-    padding: 1vh 5px;
+    padding: 5vh 5px;
 } /* i have set the way the text is displayed and padding matching to the hover move below so nothing shifts */
 .navigation-links a:hover{
     border-bottom: 5px solid #4173df;
@@ -71,6 +71,8 @@ nav, .navigation-links {
     text-align: justify;
     margin: 1rem;
     font-size: 1.3rem;
+    word-spacing: 3px;
+    line-height: 4vh;
 }
 .background-container-1 {
     margin-top: 5vh;
@@ -80,21 +82,23 @@ nav, .navigation-links {
     margin-top: 5vh;
 }
 #background .background-intro {
-    padding-inline: 10rem;
-    justify-content: center;
+    padding-inline-end: 10rem;
+    justify-content: space-around;
     align-items: center;
     font-style: italic;
     font-size: 1.7rem;
     text-decoration: underline;
     text-decoration-color: #4173df;
-    display: inline-flex;
-    padding-top: 22vh;
+    display: flex;
+    padding-top: 17vh;
 }
 #background .background-title {
     padding-inline: 7rem;
     font-size: 2rem;
     font-weight: bold;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .background-title span {
     padding-inline: 10px;
@@ -103,26 +107,18 @@ nav, .navigation-links {
 .background-containers {
     display: flex;
     padding: 1rem;
-    margin-block: 10vh;
+    margin-block: 5vh;
     margin-block-end: 20vh;
 }
-.projects-intro {
-    padding-inline: 10rem;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-size: 1.7rem;
-    text-decoration: underline;
-    text-decoration-color: #4173df;
-    display: inline-flex;
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-}
+
 .projects-title {
-    padding-inline: 7rem;
     font-size: 2.5rem;
     font-weight: bold;
-    display: inline-flex;
+    display: flex;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
 }
 .projects-title span {
     padding-inline: 10px;
@@ -144,26 +140,27 @@ nav, .navigation-links {
 }
 .project-content {
     margin-top: 10%;
+    font-style: italic;
     font-size: 2rem;
     justify-content: center;
     align-items: center;
 }
 .project-1 {
     padding: 1.5rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 3px solid;
+    border-inline: groove;
+    border-inline-color: rgb(166, 184, 202);
     text-align: center;
 }
 .project-2 {
     padding: 1.5rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 3px solid;
+    border-block: groove;
+    border-block-color: rgb(166, 184, 202);
     text-align: center;
 }
 .project-3 {
     padding: 1.5rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 3px solid;
+    border-inline: groove;
+    border-inline-color: rgb(166, 184, 202);
     text-align: center;
 }
 .contact-links span {
@@ -177,18 +174,14 @@ nav, .navigation-links {
     font-weight: bold;
 }
 .contact-links ul {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    align-items: baseline;
     justify-content: center;
     list-style: none;
-    border-right: inset;
-    border-color: #ffa620;
-    border-width: 10px;
     gap: 8vw;
     padding: 1rem;
-    margin: 1.5vw;
     margin-block-start: 20vh;
-    margin-inline: 12vw;
+    margin-inline-end: 7vw;
 }  
 
 #contact .outro-pic img {
@@ -197,22 +190,29 @@ nav, .navigation-links {
     min-width: 22vw;
     padding: 1vw;
 }
-#contact .contact-links a {
-    color:black;
+#contact .contact-links a:hover {
+    border-bottom: 5px solid #ffa620;
+	color: #7c7b7b;
+	margin: 5 5px;
+	padding: 5px 5px;
+	text-decoration: none;
 }
 .contact-links .gmail-icon img {
     min-width: 50px;
+    margin-inline: 5px;
 }
 .contact-links img {
     max-width: 40px;
     min-width: 40px; 
+    margin-inline: 10px;
 } /*icon width*/
 footer {
     position: relative; /* Change 'fixed' to 'relative' */
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-block-start: 35vh;
+    margin-inline-start: 5vw;
   }
   
   footer p {
@@ -221,8 +221,8 @@ footer {
     display: flex;
     align-items: center;
     margin: 1rem;
+    word-spacing: 5px;
   }
-
 html {
     scroll-behavior: smooth;
 } /* Will smoothly scroll down to our linked sections in the website*/
