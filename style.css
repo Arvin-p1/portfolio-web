@@ -57,7 +57,7 @@ nav, .navigation-links {
     color: #363636;
     font-weight: bold;
     text-decoration: none;
-    padding: 5vh 5px;
+    padding: 1vh 5px;
 } /* i have set the way the text is displayed and padding matching to the hover move below so nothing shifts */
 .navigation-links a:hover{
     border-bottom: 5px solid #4173df;
